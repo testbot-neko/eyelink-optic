@@ -1,0 +1,107 @@
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  z-index: 9999;
+}
+
+#chat-header {
+  background: #4a90e2;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#chat-output {
+  height: 220px;
+  padding: 10px;
+  overflow-y: auto;
+  background: #fafafa;
+}
+
+.chat-message {
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 80%;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.user {
+  background: #d1e7ff;
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.bot {
+  background: #e2f7d9;
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+#chat-input-container {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#chat-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+#send-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 25 px 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#send-btn:hover {
+  background: #357abd;
+}
+/* chatbot.css */
+#chat-input-container {
+  display: flex;
+  justify-content: flex-start;  /* ให้ปุ่มชิดซ้าย */
+  align-items: center;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-left: 5px; /* ให้มีช่องว่างเล็กๆ ด้านซ้าย */
+}
+
+#send-btn {
+  margin-left: 5px;
+  padding: 10px 12px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#send-btn:hover {
+  background: #357ab7;
+}
